@@ -5,7 +5,28 @@ import { MdCardTravel } from "react-icons/md";
 export default function Main() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-teal-500">
-      {/* Navigation */}
+      <Navigation />
+
+      <Hero />
+
+      <Features />
+
+      <PopularDestinations />
+
+      <Newsletter />
+
+      <Testimonials />
+
+      <CallToAction />
+
+      <Footer />
+    </div>
+  );
+}
+
+function Navigation() {
+  return (
+    <>
       <nav className="bg-white/10 backdrop-blur-md fixed w-full z-10">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="text-2xl font-bold text-white">Bocas Adventures</div>
@@ -45,8 +66,13 @@ export default function Main() {
           </button>
         </div>
       </nav>
+    </>
+  );
+}
 
-      {/* Hero Section */}
+function Hero() {
+  return (
+    <>
       <header className="relative pt-24 pb-16 md:pt-40 md:pb-24">
         <div className="container mx-auto px-4 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -61,8 +87,13 @@ export default function Main() {
           </button>
         </div>
       </header>
+    </>
+  );
+}
 
-      {/* Features Section */}
+function Features() {
+  return (
+    <>
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
@@ -104,8 +135,13 @@ export default function Main() {
           </div>
         </div>
       </section>
+    </>
+  );
+}
 
-      {/* Popular Destinations */}
+function PopularDestinations() {
+  return (
+    <>
       <section className="bg-blue-100 py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
@@ -181,8 +217,13 @@ export default function Main() {
           </div>
         </div>
       </section>
+    </>
+  );
+}
 
-      {/* Newsletter */}
+function Newsletter() {
+  return (
+    <>
       <section className="bg-blue-600 py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -208,8 +249,13 @@ export default function Main() {
           </form>
         </div>
       </section>
+    </>
+  );
+}
 
-      {/* Testimonials */}
+function Testimonials() {
+  return (
+    <>
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
@@ -259,8 +305,12 @@ export default function Main() {
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
+    </>
+  );
+}
+function CallToAction() {
+  return (
+    <>
       <section className="bg-gradient-to-r from-blue-500 to-teal-400 py-20 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -282,13 +332,17 @@ export default function Main() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
+    </>
+  );
+}
+function Footer() {
+  return (
+    <>
       <footer className="bg-blue-900 text-white pt-16 pb-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-bold mb-4">Bocas Explorer</h3>
+              <h3 className="text-xl font-bold mb-4">Bocas Adventures</h3>
               <p className="text-blue-300 mb-4">
                 Your guide to the beautiful archipelago of Bocas del Toro,
                 Panama.
@@ -367,12 +421,12 @@ export default function Main() {
 
           <div className="border-t border-blue-800 pt-8 text-center text-blue-400 text-sm">
             <p>
-              &copy; {new Date().getFullYear()} Bocas Explorer. All rights
+              &copy; {new Date().getFullYear()} Bocas Adventures. All rights
               reserved.
             </p>
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
