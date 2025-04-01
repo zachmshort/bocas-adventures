@@ -8,7 +8,7 @@ const montserrat = Montserrat({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Bocas Del Toro Help",
+  title: "Bocas Adventures",
   description: "Get help on your travels to Bocas Del Toro",
 };
 
