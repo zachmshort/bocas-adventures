@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { IoFishOutline, IoSunnyOutline } from "react-icons/io5";
 import { MdCardTravel } from "react-icons/md";
 
@@ -155,7 +156,7 @@ export default function Main() {
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group"
               >
                 <div className="h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={destination.image}
                     alt={destination.name}
                     className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
