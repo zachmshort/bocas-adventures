@@ -8,7 +8,7 @@ export default function Main() {
       {/* Navigation */}
       <nav className="bg-white/10 backdrop-blur-md fixed w-full z-10">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">Bocas Explorer</div>
+          <div className="text-2xl font-bold text-white">Bocas Adventures</div>
           <div className="hidden md:flex space-x-6">
             {[
               "Home",
