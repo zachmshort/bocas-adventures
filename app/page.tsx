@@ -6,19 +6,12 @@ export default function Main() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-teal-500">
       <Navigation />
-
       <Hero />
-
       <Features />
-
       <PopularDestinations />
-
       <Newsletter />
-
       <Testimonials />
-
       <CallToAction />
-
       <Footer />
     </div>
   );
@@ -99,7 +92,6 @@ function Features() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
             Why Visit Bocas del Toro?
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -147,7 +139,6 @@ function PopularDestinations() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
             Popular Destinations
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -195,6 +186,8 @@ function PopularDestinations() {
                   <Image
                     src={destination.image}
                     alt={destination.name}
+                    width={2000}
+                    height={200}
                     className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
                   />
                 </div>
@@ -233,7 +226,6 @@ function Newsletter() {
             Subscribe to our newsletter and be the first to know about special
             deals and seasonal activities in Bocas del Toro
           </p>
-
           <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
             <input
               type="email"
@@ -261,7 +253,6 @@ function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
             What Travelers Say
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -308,6 +299,7 @@ function Testimonials() {
     </>
   );
 }
+
 function CallToAction() {
   return (
     <>
@@ -321,7 +313,6 @@ function CallToAction() {
             Our local experts will create a customized itinerary based on your
             interests.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full shadow-lg transform transition hover:scale-105">
               Browse Packages
@@ -335,6 +326,7 @@ function CallToAction() {
     </>
   );
 }
+
 function Footer() {
   return (
     <>
@@ -362,7 +354,6 @@ function Footer() {
                 )}
               </div>
             </div>
-
             <div>
               <h3 className="text-lg font-semibold mb-4">Destinations</h3>
               <ul className="space-y-2">
@@ -385,7 +376,6 @@ function Footer() {
                 ))}
               </ul>
             </div>
-
             <div>
               <h3 className="text-lg font-semibold mb-4">Activities</h3>
               <ul className="space-y-2">
@@ -408,7 +398,6 @@ function Footer() {
                 ))}
               </ul>
             </div>
-
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-blue-300">
@@ -418,7 +407,6 @@ function Footer() {
               </ul>
             </div>
           </div>
-
           <div className="border-t border-blue-800 pt-8 text-center text-blue-400 text-sm">
             <p>
               &copy; {new Date().getFullYear()} Bocas Adventures. All rights
